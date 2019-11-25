@@ -1,0 +1,90 @@
+1) EJEMPLO: countPositive
+
+1. 	El programa nos cuenta los valores ceros del array como 	valores positivos. No debería ser así. Tendríamos que 
+	cambiar >= por >.
+
+2.
+	- Entrada: x = NULL
+
+3. 	
+	- Entrada: x = [1,2,3]
+	- Resultado esperado: 3
+	- Resultado obtenido: 3
+
+4.	Si tenemos un error en el estado observamos una disfunción 		del programa.
+
+5.	No tenemos caso de prueba anterior.
+
+6.	Realizado en directorio.
+
+2) EJEMPLO: lastZero
+
+1. 	El programa nos devuelve el primer cero que encuentra.
+	No el último. Para arreglarlo tendríamos que modificar
+	el bucle y hacer que fuese inverso:
+	
+	for (int i=x.length-1; i >= 0; i--)
+
+2.	
+	- Entrada: x = NULL
+
+3.
+	- Entrada: x = [1,2,3]
+	- Resultado esperado: -1
+	- Resultado obtenido: -1
+
+4.
+	- Entrada: x = [1,0,3]
+	- Resultado esperado: 1
+	- Resultado obtenido: 1
+
+5.	Que el índice del último cero del array sea 1 es un estado
+	erroneo, pero en este caso coincide con el resultado que
+	esperaríamos, ya que únicamente tenemos un cero.
+
+6.	Realizado en directorio.
+
+3) EJEMPLO: findLast
+
+1.	El bucle for nunca llega al primer elemento de la lista.
+	Deberíamos tener:
+	
+	for (int i=x.length-1; i >= 0; i--)
+
+2.
+	- Entrada: x = NULL
+
+3.	No es posible, ya que cualquier array que metamos tendrá
+	una posicion 0 a la que no se accederá.
+
+4.
+	- Entrada: x = [1,2,3]
+	- Entrada: y = 3
+	- Resultado esperado: 2
+	- Resultado obtenido: 2
+
+5.	El programa no accede al primer índice del array.
+
+6.	Realizado en directorio.
+
+4) EJEMPLO: oddOrPos
+
+1.	En la condición de comprobar si un número es impar o no, deberíamos tener
+	if (x[i]%2 != 0)
+
+2.	
+	- Entrada: x = NULL
+
+3.	
+	- Entrada: x = [1,2,3]
+	- Resultado esperado: 3
+	- Resultado obtenido: 3
+
+4.	No es posible.
+
+5.	No hay caso de prueba en el apartado anterior.
+
+6.	Realizado en directorio.
+	
+
+	
